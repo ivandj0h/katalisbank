@@ -1,0 +1,15 @@
+{
+  "name": "kataisbank",
+  "version": "1.0.0",
+  "description": "katalis bank atm",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "bank",
+    "atm"
+  ],
+  "author": "ivandi djoh gah",
+  "license": "ISC"
+}
