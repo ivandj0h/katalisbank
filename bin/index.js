@@ -6,6 +6,7 @@ import { Core } from "../core/Core.js";
 import { getValuesFromFile } from "../controllers/Accounts.js";
 import { staticWelcomeScreenValueTitle } from "../helpers/static_val.js";
 import { prompted } from "../helpers/prompt_val.js";
+import { vals } from "../helpers/json_val.js";
 
 const run = async () => {
   staticWelcomeScreenValueTitle();
@@ -13,14 +14,14 @@ const run = async () => {
   const getUserName = prompted();
 
   const getValueFromConsoleInput = new Core(getUserName);
+  const newValue = vals(getValueFromConsoleInput.name);
 
-  const data = {
-    _id: 1,
-    name: getValueFromConsoleInput.name,
-    balance: 0,
-  };
-
-  getValuesFromFile(data);
+  if (getValueFromConsoleInput.name !== "") {
+    getValuesFromFile(newValue);
+  } else {
+    console.log(`Sorry, you didn't enter username, please try again!!`);
+    process.exit(1);
+  }
 };
 
 run();
