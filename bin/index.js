@@ -12,6 +12,9 @@ const prompt = ps();
 // get helper files
 const readJson = require("../helpers/readjson");
 
+// controllers
+const saveval = require("../controllers/saveval");
+
 console.log(
   chalk.whiteBright(
     figlet.textSync("dkatalis bank", {
@@ -29,19 +32,7 @@ if (getName !== "") {
     balance: 0,
   };
 
-  const saveData = (data) => {
-    const finished = (error) => {
-      if (error) {
-        console.error(error);
-
-        return;
-      }
-    };
-    const jsonData = JSON.stringify(data, null, 2);
-
-    fs.writeFile(`./data/${data.name}.json`, jsonData, finished);
-  };
-  saveData(data);
+  saveval.saveData(data);
 
   // read data from json
   readJson.jsonReader(`./data/${data.name}.json`, (err, data) => {
