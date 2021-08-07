@@ -2,7 +2,7 @@
   "name": "kataisbank",
   "version": "1.0.0",
   "description": "katalis bank atm",
-  "main": "index.js",
+  "main": "bin/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,5 +11,9 @@
     "atm"
   ],
   "author": "ivandi djoh gah",
-  "license": "ISC"
+  "license": "ISC",
+  "bin": {
+    "dkatalis": "./bin/index.js"
+  },
+  "dependencies": {}
 }
