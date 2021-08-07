@@ -37,3 +37,22 @@ To running this project, simply type this command below on your favourite Termin
 ```
 dkatalis
 ```
+
+Then, it would showing you the `Welcome Screen` with `Login`.
+Enter your `Username` then press `Enter`.
+
+after sucessfully `Login`, then you can play around with all the `Menus`
+
+Good Luck, and Have a niceday!
+
+### Credit
+
+```
+Package Name : dkatalisbank
+version : 1.0.0
+Author : Ivandi Djoh Gah
+Date : August 7, 2021
+Stack : Javascript (ES6)
+dependencies : chalk, figlet, inquirer, prompt-sync
+
+```
