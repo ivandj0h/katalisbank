@@ -23,20 +23,33 @@ const writeFileData = (newValue) => {
   });
 };
 
-const writeFileDataUpdated = (updateValues) => {
+const writeFileDataUpdated = (data, updateValues) => {
   const pathFile = `./data/${updateValues.name}.json`;
-  const newBalance = updateValues;
+  const { name, balance } = data;
+  const nbalance = parseInt(updateValues.balance);
+
+  const combineBalanceDataValue = countValues(nbalance, parseInt(balance));
+  const newBalance = {
+    _id: 1,
+    name,
+    balance: combineBalanceDataValue,
+  };
 
   fs.writeFile(pathFile, JSON.stringify(newBalance), (err) => {
     if (err) {
       console.log("Error writing file", err);
     } else {
       console.log(
-        `\n\u00A0 Your Balance is $${updateValues.balance} ${updateValues.name}`
+        `\n\u00A0 Congradultion ${updateValues.name},\n\u00A0 You're sucessfully add $${updateValues.balance} to your Account, \n\u00A0 Now Your Balance is $${combineBalanceDataValue}`
       );
+      console.log(`\n`);
       nextPrompted(updateValues);
     }
   });
 };
+
+function countValues(a, b) {
+  return a + b;
+}
 
 export { writeFileData, writeFileDataUpdated };

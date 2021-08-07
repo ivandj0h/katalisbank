@@ -44,7 +44,6 @@ const checkBalanceUser = (data) => {
         console.log(`\n`);
         nextPrompted(data);
       } else {
-        nextPrompted(data);
       }
     } catch (error) {
       console.error(error);
@@ -53,6 +52,6 @@ const checkBalanceUser = (data) => {
 };
 
 const updateBalanceUser = (data, updateValues) => {
-  writeFileDataUpdated(updateValues);
+  writeFileDataUpdated(data, updateValues);
 };
 export { getValuesFromFile, checkBalanceUser, updateBalanceUser };
