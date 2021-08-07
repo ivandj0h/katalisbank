@@ -29,4 +29,6 @@ const staticWelcomeScreenValueLogo = () => {
   );
 };
 
+const multipleChoiseAfterLogin = () => {};
+
 export { staticWelcomeScreenValueTitle };

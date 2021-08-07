@@ -12,16 +12,12 @@ const run = async () => {
   staticWelcomeScreenValueTitle();
 
   const getUserName = userNamePrompted();
-  // const askDeposit = depositPrompted();
 
   const getValueFromConsoleInput = new Core(getUserName);
   const newValue = vals(getValueFromConsoleInput.name);
 
   if (getValueFromConsoleInput.name !== "") {
-    // depositPrompted();
-    // getValuesFromFile(newValue);
-
-    const commands = "login";
+    const commands = "dkatalis";
 
     switch (commands) {
       case "deposit":
@@ -33,8 +29,6 @@ const run = async () => {
         break;
       default:
         getValuesFromFile(newValue);
-
-      // depositPrompted();
     }
   } else {
     console.log(`Sorry, you didn't enter username, please try again!!`);
