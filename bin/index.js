@@ -20,12 +20,8 @@ const run = async () => {
     const commands = "dkatalis";
 
     switch (commands) {
-      case "deposit":
-        console.log("Oranges are $0.59 a pound.");
-        break;
-      case "Mangoes":
-      case "Papayas":
-        console.log("Mangoes and papayas are $2.79 a pound.");
+      case "logout":
+        console.log("Good bye.");
         break;
       default:
         getValuesFromFile(newValue);
