@@ -9,6 +9,9 @@ const figlet = require("figlet");
 const ps = require("prompt-sync");
 const prompt = ps();
 
+// get helper files
+const readJson = require("../helpers/readjson");
+
 console.log(
   chalk.whiteBright(
     figlet.textSync("dkatalis bank", {
@@ -40,30 +43,16 @@ if (getName !== "") {
   };
   saveData(data);
 
-  // helper function to read data from json
-  function jsonReader(filePath, cb) {
-    fs.readFile(filePath, "utf-8", (err, fileData) => {
-      if (err) {
-        return cb && cb(err);
-      }
-      try {
-        const obj = JSON.parse(fileData);
-
-        return cb && cb(null, obj);
-      } catch (err) {
-        return cb && cb(err);
-      }
-    });
-  }
-
   // read data from json
-  jsonReader(`./data/${data.name}.json`, (err, data) => {
+  readJson.jsonReader(`./data/${data.name}.json`, (err, data) => {
     if (err) {
       console.log(err);
     } else {
       console.log(`Hello, ${data.name}`);
       console.log(`Your balance is $${data.balance}`);
     }
+    const depositBalance = prompt("deposit : ");
+    console.log(`Your balance now is $${depositBalance}`);
   });
 } else {
   console.log(`Sorry, you didn't enter username, please try again!!`);
