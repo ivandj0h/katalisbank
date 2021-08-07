@@ -14,6 +14,7 @@ const readJson = require("../helpers/readjson");
 
 // controllers
 const checkval = require("../controllers/readval");
+const showval = require("../controllers/showval");
 const saveval = require("../controllers/saveval");
 
 console.log(
@@ -29,28 +30,17 @@ const getName = prompt("enter username : ");
 
 if (getName !== "") {
   const data = {
+    _id: 1,
     name: getName,
     balance: 0,
   };
-
-  const checkDataIfAlreadyExist = checkval.checkData(data);
-  if (!checkDataIfAlreadyExist) {
-    saveval.saveData(data);
-  } else {
-    console.log(checkDataIfAlreadyExist);
-  }
-
-  // read data from json
-  readJson.jsonReader(`./data/${data.name}.json`, (err, data) => {
-    if (err) {
-      console.log(err);
-    } else {
-      console.log(`Hello, ${data.name}`);
-      console.log(`Your balance is $${data.balance}`);
-    }
-    const depositBalance = prompt("deposit : ");
-    console.log(`Your balance now is $${depositBalance}`);
-  });
+  checkval.checkData(data);
+  // const checkDataIfAlreadyExist = checkval.checkData(data);
+  // if (!checkDataIfAlreadyExist) {
+  //   checkval.checkData(data);
+  // } else {
+  //   console.log(`Welcome new User`);
+  // }
 } else {
   console.log(`Sorry, you didn't enter username, please try again!!`);
   process.exit(1);
