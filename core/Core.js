@@ -6,7 +6,7 @@ class Core {
   }
 
   welcomeGreeting() {
-    return `Hello ${this.name}`;
+    return `\u00A0 Hello ${this.name}`;
   }
 
   getValueFromConsole() {

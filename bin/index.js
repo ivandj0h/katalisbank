@@ -19,7 +19,7 @@ const run = async () => {
   if (getValueFromConsoleInput.name !== "") {
     getValuesFromFile(newValue);
   } else {
-    console.log(`Sorry, you didn't enter username, please try again!!`);
+    console.log(`\u00A0 Sorry, you didn't enter username, please try again!!`);
     process.exit(1);
   }
 };

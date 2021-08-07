@@ -10,14 +10,14 @@ const vals = (newValueInputFromUser) => {
   return newValue;
 };
 
-const balanceUpdate = (newValueInputFromUser, newBalanceInputFromUser) => {
-  const newValue = {
+const balanceUpdateVals = (newValueInputFromUser, newBalanceInputFromUser) => {
+  const updateBalanceValue = {
     _id: 1,
     name: newValueInputFromUser,
     balance: newBalanceInputFromUser,
   };
 
-  return newValue;
+  return updateBalanceValue;
 };
 
-export { vals, balanceUpdate };
+export { vals, balanceUpdateVals };
