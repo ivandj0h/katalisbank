@@ -15,3 +15,25 @@ To getting start with this Application, simply clone this repository by running 
 ```
 
 or you can directly download the zip file by clicking the download button on the top right side of this repository.
+
+### Installation
+
+After you clone or download this repository, just run this command below
+
+Navigate to the Folder "katalisbank", then type this command below
+
+```
+npm install -g .
+```
+
+Note : Don't forget adding DOT (.) after -g
+
+wait until the installation finish, and then type this command below to run the program
+
+### Run the Project
+
+To running this project, simply type this command below on your favourite Terminal
+
+```
+dkatalis
+```
