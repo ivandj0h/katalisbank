@@ -1,9 +1,24 @@
-import fs from "fs";
+"use strict";
+
 import figlet from "figlet";
 import chalk from "chalk";
-import PromptSync from "prompt-sync";
 
-const staticWelcomeScreenValue = () => {
+const staticWelcomeScreenValueTitle = () => {
+  console.log("\n");
+  console.log(
+    `===========================================================================`
+  );
+  console.log("\u00A0 Welcome to :");
+  console.log(
+    `---------------------------------------------------------------------------`
+  );
+  staticWelcomeScreenValueLogo();
+  console.log(
+    `---------------------------------------------------------------------------`
+  );
+};
+
+const staticWelcomeScreenValueLogo = () => {
   console.log(
     chalk.whiteBright(
       figlet.textSync("dkatalis bank", {
@@ -14,8 +29,4 @@ const staticWelcomeScreenValue = () => {
   );
 };
 
-const staticWelcomeScreenValueTwo = () => {
-  console.log(`Welcome`);
-};
-
-export { staticWelcomeScreenValue, staticWelcomeScreenValueTwo };
+export { staticWelcomeScreenValueTitle };
