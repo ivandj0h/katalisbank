@@ -10,8 +10,7 @@ class Welcome extends Core {
   }
 
   getData() {
-    return `Hello ${this.name}, \nYour Balance is $${this.balance}
-    `;
+    return `Hello ${this.name}, \nYour Balance is $${this.balance}`;
   }
 }
 
