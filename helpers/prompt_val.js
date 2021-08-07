@@ -5,6 +5,10 @@ import promptSync from "prompt-sync";
 
 const prompt = promptSync();
 
-const prompted = () => prompt(`Please Enter Your Username : `);
+const userNamePrompted = () => prompt(`Please Enter Your Username : `);
+const depositPrompted = (value) => {
+  prompt(`Enter Choise : `);
+  console.log(value);
+};
 
-export { prompted };
+export { userNamePrompted, depositPrompted };
