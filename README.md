@@ -28,7 +28,7 @@ npm install -g .
 
 Note : Don't forget adding DOT (.) after -g
 
-wait until the installation finish, and then type this command below to run the program
+wait until the installation finish.
 
 ### Run the Project
 

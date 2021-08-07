@@ -34,7 +34,7 @@ const checkBalanceUser = (data) => {
     try {
       if (fs.existsSync(path)) {
         const { name, balance } = data;
-        console.log(`Hello, ${name}, Your Balance is $${balance}`);
+        console.log(`Hello, ${name}, Your Balance is $${balance} \n`);
         nextPrompted(data);
       } else {
         nextPrompted(data);
@@ -44,4 +44,5 @@ const checkBalanceUser = (data) => {
     }
   });
 };
+
 export { getValuesFromFile, checkBalanceUser };

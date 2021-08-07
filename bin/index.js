@@ -17,15 +17,7 @@ const run = async () => {
   const newValue = vals(getValueFromConsoleInput.name);
 
   if (getValueFromConsoleInput.name !== "") {
-    const commands = "dkatalis";
-
-    switch (commands) {
-      case "logout":
-        console.log("Good bye.");
-        break;
-      default:
-        getValuesFromFile(newValue);
-    }
+    getValuesFromFile(newValue);
   } else {
     console.log(`Sorry, you didn't enter username, please try again!!`);
     process.exit(1);
