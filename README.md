@@ -4,7 +4,7 @@
 
 DKATALIS CLI is an Command Line Interface (CLI) Application which is use to simulate an interaction of an ATM with a retail bank.
 
-![Dashboard](assets/cli_prev.png "This is the results of DKATALIS CLI APP's captured")
+![Dashboard](assets/images/cli_prev.png "This is the results of DKATALIS CLI APP's captured")
 
 ### Getting Started
 

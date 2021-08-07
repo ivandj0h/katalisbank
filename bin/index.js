@@ -13,6 +13,7 @@ const prompt = ps();
 const readJson = require("../helpers/readjson");
 
 // controllers
+const checkval = require("../controllers/readval");
 const saveval = require("../controllers/saveval");
 
 console.log(
@@ -32,7 +33,12 @@ if (getName !== "") {
     balance: 0,
   };
 
-  saveval.saveData(data);
+  const checkDataIfAlreadyExist = checkval.checkData(data);
+  if (!checkDataIfAlreadyExist) {
+    saveval.saveData(data);
+  } else {
+    console.log(checkDataIfAlreadyExist);
+  }
 
   // read data from json
   readJson.jsonReader(`./data/${data.name}.json`, (err, data) => {
