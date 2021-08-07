@@ -13,7 +13,10 @@
   "author": "ivandi djoh gah",
   "license": "ISC",
   "bin": {
-    "dkatalis": "./bin/index.js"
+    "login": "./bin/index.js",
+    "deposit": "./bin/deposit.js"
   },
-  "dependencies": {}
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
 }

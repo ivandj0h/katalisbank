@@ -7,10 +7,11 @@ const fs = require("fs");
 const ps = require("prompt-sync");
 const prompt = ps();
 
-const getName = prompt("login ");
+const getDeposit = prompt("deposit ");
 
 const data = {
-  name: getName,
+  name: getDeposit,
+
   balance: 0,
 };
 
@@ -24,7 +25,7 @@ const saveData = (data) => {
   };
   const jsonData = JSON.stringify(data, null, 2);
 
-  fs.writeFile(`${data.name}.json`, jsonData, finished);
+  fs.writeFile("data.json", jsonData, finished);
 };
 
 saveData(data);
@@ -46,7 +47,7 @@ function jsonReader(filePath, cb) {
 }
 
 // read data from json
-jsonReader(`./${data.name}.json`, (err, data) => {
+jsonReader("./data.json", (err, data) => {
   if (err) {
     console.log(err);
   } else {
