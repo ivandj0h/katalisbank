@@ -81,7 +81,7 @@ const transferAmountPrompt = (data) => {
       const { target, amount } = res;
       const targetPath = `./data/${target}.json`;
 
-      checkIfTargetPathExist(target, targetPath, data);
+      checkIfTargetPathExist(target, targetPath, amount, data);
     });
 };
 
