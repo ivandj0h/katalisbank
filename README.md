@@ -11,7 +11,7 @@ DKATALIS CLI is an Command Line Interface (CLI) Application which is use to simu
 To getting start with this Application, simply clone this repository by running this command below
 
 ```
-    git clone https://github.com/ivandi1980/katalisbank.git
+git clone https://github.com/ivandi1980/katalisbank.git
 ```
 
 or you can directly download the zip file by clicking the download button on the top right side of this repository.
@@ -42,6 +42,22 @@ Then, it would showing you the `Welcome Screen` with `Login`.
 Enter your `Username` then press `Enter`.
 
 after sucessfully `Login`, then you can play around with all the `Menus`
+
+### Error on Windows
+
+This is a special `Case Error` happen in windows, if face an error like this below :
+`File C:\Users\admin\AppData\Roaming\npm\ng.ps1 cannot be loaded because running scripts is disabled on this system. For more information, see about_Execution_Policies at https:/go.microsoft.com/fwlink/?LinkID=135170.`
+
+what you've to do is :
+
+First, you have to need to open the command prompt and run this command and Execute this command :
+`set-ExecutionPolicy RemoteSigned -Scope CurrentUser `
+
+Now you have to run the second command on your system. This command is:
+`Get-ExecutionPolicy`
+
+To view their policy, you need to run this command in your command prompt:
+`Get-ExecutionPolicy -list`
 
 Good Luck, and Have a niceday!
 
