@@ -1,0 +1,25 @@
+{
+  "name": "dkatalisbank",
+  "version": "1.0.0",
+  "description": "dkatalis bank atm console",
+  "main": "bin/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "bank",
+    "atm"
+  ],
+  "author": "ivandi djoh gah",
+  "license": "ISC",
+  "bin": {
+    "dkatalis": "./bin/index.js"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "figlet": "^1.5.0",
+    "inquirer": "^8.1.2",
+    "prompt-sync": "^4.2.0"
+  }
+}
