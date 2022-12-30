@@ -1,0 +1,90 @@
+[33mcommit 3430cc1c29773c629054228319d22116099180fa[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31mupstream/master[m[33m, [m[1;31mupstream/HEAD[m[33m)[m
+Merge: f43bfdf 36f123a
+Author:     ivandjoh <ivandi.djoh@gmail.com>
+AuthorDate: Fri Sep 2 16:16:01 2022 +0800
+Commit:     ivandjoh <ivandi.djoh@gmail.com>
+CommitDate: Fri Sep 2 16:16:01 2022 +0800
+
+    Merge branch 'master' of https://github.com/ivandi1980/katalisbank
+
+[33mcommit 36f123ae0ee5b6736caa65ffa722c1f61fa96c50[m
+Merge: d87c8b9 63999c6
+Author:     ivandjoh <ivandi.djoh@gmail.com>
+AuthorDate: Fri Sep 2 16:14:37 2022 +0800
+Commit:     GitHub <noreply@github.com>
+CommitDate: Fri Sep 2 16:14:37 2022 +0800
+
+    Merge pull request #2 from ivandi1980/dependabot/npm_and_yarn/ansi-regex-4.1.1
+    
+    Bump ansi-regex from 4.1.0 to 4.1.1
+
+[33mcommit 63999c653721de50eb4b5a598cbe6a14fe880049[m
+Merge: 65e8398 d87c8b9
+Author:     ivandjoh <ivandi.djoh@gmail.com>
+AuthorDate: Fri Sep 2 16:14:28 2022 +0800
+Commit:     GitHub <noreply@github.com>
+CommitDate: Fri Sep 2 16:14:28 2022 +0800
+
+    Merge branch 'master' into dependabot/npm_and_yarn/ansi-regex-4.1.1
+
+[33mcommit f43bfdfd5c8c1d2d51e09a98bf4dc3eb8a38c3a1[m[33m ([m[1;31morigin/master[m[33m)[m
+Author:     ivandjoh <ivandi.djoh@gmail.com>
+AuthorDate: Fri Sep 2 16:07:06 2022 +0800
+Commit:     ivandjoh <ivandi.djoh@gmail.com>
+CommitDate: Fri Sep 2 16:07:06 2022 +0800
+
+    remove json package lock
+
+[33mcommit d87c8b9fbd9b14ae211a388e34441a004d7a78cc[m
+Author:     ivandjoh <ivandi.djoh@gmail.com>
+AuthorDate: Fri Sep 2 16:00:31 2022 +0800
+Commit:     ivandjoh <ivandi.djoh@gmail.com>
+CommitDate: Fri Sep 2 16:01:52 2022 +0800
+
+    update change
+    
+    updating change
+
+[33mcommit 65e83985e54a064a262e878889edf90b5752714b[m[33m ([m[1;32mdependabot/npm_and_yarn/ansi-regex-4.1.1[m[33m)[m
+Author:     dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+AuthorDate: Fri Sep 2 08:01:25 2022 +0000
+Commit:     GitHub <noreply@github.com>
+CommitDate: Fri Sep 2 08:01:25 2022 +0000
+
+    Bump ansi-regex from 4.1.0 to 4.1.1
+    
+    Bumps [ansi-regex](https://github.com/chalk/ansi-regex) from 4.1.0 to 4.1.1.
+    - [Release notes](https://github.com/chalk/ansi-regex/releases)
+    - [Commits](https://github.com/chalk/ansi-regex/compare/v4.1.0...v4.1.1)
+    
+    ---
+    updated-dependencies:
+    - dependency-name: ansi-regex
+      dependency-type: indirect
+    ...
+    
+    Signed-off-by: dependabot[bot] <support@github.com>
+
+[33mcommit e521c54d57cc1df1b8a4d52927194a913c483221[m
+Author:     ivandjoh <ivandi.djoh@gmail.com>
+AuthorDate: Fri Sep 2 16:00:31 2022 +0800
+Commit:     ivandjoh <ivandi.djoh@gmail.com>
+CommitDate: Fri Sep 2 16:00:31 2022 +0800
+
+    update change
+
+[33mcommit 707caec1c87a712113fbd82c28e374662ec4b9da[m
+Author:     ivandjoh <ivandi.djoh@gmail.com>
+AuthorDate: Fri Sep 2 16:00:17 2022 +0800
+Commit:     ivandjoh <ivandi.djoh@gmail.com>
+CommitDate: Fri Sep 2 16:00:17 2022 +0800
+
+    update incoming change
+
+[33mcommit 02cdeee2029ec88d7af38baba36d1975e27ce574[m
+Author:     ivandi1980 <ivandi.djoh@gmail.com>
+AuthorDate: Mon Nov 1 17:28:47 2021 +0800
+Commit:     ivandi1980 <ivandi.djoh@gmail.com>
+CommitDate: Mon Nov 1 17:28:47 2021 +0800
+
+    refactoring
